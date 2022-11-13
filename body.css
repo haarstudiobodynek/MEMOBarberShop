@@ -1,0 +1,696 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #1d1e24;
+    padding-top: 15px;
+    color: white;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+#logo{
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+    background-color: #1d1e24;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+}
+
+
+#header-image img{
+    padding-top: 30px;
+    display: block;
+    height: 500px;
+    object-fit: cover;
+    object-position: 50% 10%;
+    width: 100%;
+    
+}
+
+#top{
+    text-align: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: larger;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#navbar{
+    position: relative;
+    padding-left: 20px;
+    padding-right: 10px;
+    
+}
+
+.menu{
+    transition: all ease-in-out 0.2s;
+}
+
+a{
+text-decoration: none;
+color: white;
+font-size: 25px;
+font-weight: bold;
+
+
+}
+
+ul{
+    list-style: none;
+    margin-left: -40px;
+    
+}
+
+.buttonhalter:hover .menu{
+    transform: translateY(-20px);
+    text-shadow: 0 0 5px white ;
+    transform: scale(1.2);
+}
+
+.buttonhalter{
+    display: inline-block;
+    margin-left: 80px;
+    margin-right: 105px;
+    cursor: pointer;
+
+}
+
+#image-text{
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    text-align: center;
+
+}
+
+.telefon{
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+a.telefon-link{
+    height: 50px;
+    border: 3px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    transition: all ease-in-out 0.2s;
+    
+
+}
+
+a.telefon-link:hover{
+    box-shadow: 0 0 8px black ;
+
+}
+
+#service{
+    color: white;
+    margin-top: 12px;
+    font-size: large;
+    text-align: center;
+   
+    
+    
+}
+
+.überschrift{
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.item1{
+    color: white;
+    width: 296px; height: 520px; float: left; 
+    border: 3px solid white;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+
+.item2{
+    color: white;
+    width: 296px; height: 520px; float: left; 
+    border: 3px solid white;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.item3{
+    color: white;
+    width: 305px; height: 520px; float: left; 
+    border: 3px solid white;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+
+}
+
+.item4{color: white;
+    width: 296px; height: 520px; float: left; 
+    border: 3px solid white;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.Oeffnungszeiten-top{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 100px;
+    background-image: url(products.jpg);
+    background-size: cover;
+    background-position: 20% 50%;
+    background-size: 1590px;
+    margin-left: -110px;
+    margin-right: -110px;
+    font-weight: 100;
+}
+.Oeffnungszeiten{
+
+    color: white;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 80px;
+    text-shadow: 20px 20px 20px black;
+
+}
+
+.day{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+
+}
+
+.ueber-uns-top{
+    color: white;
+    text-align: center;
+}
+.ueber-uns{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.ueber-uns img{
+
+    width: 400px;
+    object-fit: cover;
+    margin-left: 50px;
+}
+
+.slideshow {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slide {
+    opacity: 0;
+    transition: opacity 0.5s;
+    position: absolute;
+
+}
+
+.slidebild{
+    width: 100%;
+}
+
+.textbereich{
+    position: absolute;
+    left: 10%;
+    right: 46%;
+    top: 22%;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    text-shadow: black 20px 0px 20px, black -15px 10px 20px ;
+    
+}
+
+.ueberschrift{
+    position: absolute;
+    color: white;
+    top: 5%;
+    bottom: 90%;
+}
+
+.textbereich img{
+    left: 112%;
+    position: absolute;
+    right: 80%;
+    width: 80%;
+    height: 300px;
+    object-fit: cover;
+    top: 15%;
+}
+
+.indikatorenliste {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    list-style-type: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.indikator {
+    padding: 0 5px;
+    user-select: none;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+
+.aktiv {
+    opacity: 1;
+}
+
+
+#socialmediacontainer{
+    margin-right: -100px;
+    margin-left: -100px;
+    margin-bottom: -230px;
+    margin-top: 30px;
+}
+
+.social-media-header{
+    color: white;
+    text-align: center;
+
+}
+.social-media{
+    text-align: center;
+    height: 300px;
+    color: white;
+    font-size: 25px;
+    margin-right: 250px;
+    margin-left: 250px;
+
+}
+
+.smtext{
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.bildergallerie{
+    column-count: 3;
+    column-gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.gallerieblock{
+    display: inline-block;
+}
+
+.gallerieblock img{
+    width: 100%;
+    max-width: 300px;
+}
+
+.maps-container{
+   display: flex;
+   justify-content: space-between;
+    width: auto;
+    background-image: url(Außenansicht.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 50%;
+    height: 650px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.maps-container h1{
+    text-align: center;
+    align-items: center;
+}
+
+.maps-text{
+    width: 60%;
+    margin-left: 10px;
+    color: white;
+    font-size: 27px;
+    text-align: center;
+    align-items: center;
+    font-weight: bolder;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-shadow: 0px 0px 8px black;
+}
+
+.maps-image{
+    border: 0;
+    height: 400px;
+    width: 60%;
+    margin-right: 80px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.legal-content{
+    padding: 12px;
+    color: white;
+}
+  
+.legal-text{
+    margin-right: 10px;
+    color: white;
+    
+}
+
+a.legal-content{
+    padding: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 19px;
+    transition: all ease-in-out 0.2s;
+
+
+}
+
+a.legal-content:hover{
+    text-shadow: 0 0 5px white ;
+
+}
+
+
+@media (max-width: 450px){
+    
+    html{
+        overflow-x: hidden;
+    }
+
+
+    .mobileklammerauf{
+        display: block; 
+        background-image: url(Bild\ Herrensalon\ \(2\).jpg);
+        height: 550px; 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        text-shadow: 0px 0px 8px black;
+    }
+
+    .menu a{
+    font-size: 15px;
+    font-weight: 600; 
+    justify-content: space-between;
+    }
+    
+    .buttonhalter{
+        display: inline-block;
+        margin-left: 20px;
+        margin-right: 20px;
+        cursor: pointer;}
+
+    #header-image img{
+        display: none;
+        
+    }
+        
+
+    .telefon{
+    text-align: center;
+    font-size: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+
+    }
+    a.telefon-link{
+        width: 80px;
+        height: 30px;
+        border: 2px solid white;}
+       
+
+
+        #service{
+            width: 400px;
+            height: 2430px;
+            color: white;
+            margin-top: 12px;
+            font-size: 17px; 
+            
+
+        }
+        .item1{
+            width: 330px; height: 500px; float: left; 
+        }
+        .item2{
+            width: 330px; height: 570px; float: left; 
+        }
+        .item3{
+            width: 330px; height: 570px; float: left; 
+        }
+        .item4{
+            width: 330px; height: 480px; float: left; 
+        }
+        
+        .oeffnungszeiten-area{
+            margin-left: -10px;
+            margin-right: -8px
+        }
+
+        .Oeffnungszeiten{ font-size: 18px;
+            margin-left: 50px;
+            margin-right: 50px;
+            
+        }
+        .Oeffnungszeiten-top{
+            background-position: 40% 50%;
+            background-size: 900px;
+            margin-left: 0px;
+            margin-right: 0px;
+            
+        }
+
+        
+.überschrift{
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;}
+
+    .ueber-uns{
+        display: flex;
+        flex-wrap: wrap;
+        color: white;
+        font-size: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+        margin-top: -30px;
+    
+    }
+
+    .ueber-uns img{
+
+        width: 300px;
+        object-fit: cover;
+        align-items: center;
+        margin-left: 25px;
+    }
+
+    
+.slideshow {
+    width: 100%;
+    height: 740px;
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s;
+
+
+}
+
+.slidebild{
+    width: 100%;
+    height: 680px;
+}
+
+.textbereich{
+    position: absolute;
+    font-size: 16px;
+    font-weight: 200;
+    left: auto;
+    right: auto;
+    text-align: center;
+    text-shadow: black 15px -15px 15px, black -15px 10px 18px ;
+    top: 12%;
+    
+    
+}
+
+.ueberschrift{
+    position: relative;
+    text-align: center;
+    top: 2%;
+}
+
+.textbereich img{
+    left: 122%;
+    position: absolute;
+    right: 60%;
+}
+
+.indikatorenliste {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    list-style-type: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.indikator {
+    padding: 0 5px;
+    user-select: none;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+
+.aktiv {
+    opacity: 1;
+}
+
+
+
+#socialmediacontainer{
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-top: -60px;
+}
+
+.social-media-header{
+    color: white;
+    text-align: center;
+    font-size: large;
+
+}
+.social-media{
+    text-align: center;
+    height: 140px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 60px;
+    margin-left: 60px;
+
+}
+
+.smtext{
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.bildergallerie{
+    column-count: 3;
+    column-gap: 6px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.gallerieblock{
+    display: inline-block;
+}
+
+.gallerieblock img{
+    width: 100%;
+    max-width: 1000px;
+}
+
+.maps-container{
+    padding-left: 40px;
+    padding-right: 40px;
+    flex-wrap: wrap;    
+    height: 450px;
+    background-position: 50% 50%;
+
+}
+
+.maps-text{
+    width: 100%;
+    margin-left: 0px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    font-weight: bolder;
+    margin-top: 80px;
+    margin-bottom: 0px;
+}
+
+.maps-image{
+    border: 0;
+    height: 150px;
+    width: 100%;
+    margin-right: 0px;
+    margin-top: 30px;
+    margin-bottom: auto;
+
+}
+a.legal-content{
+    font-size: 14px;    
+    }
+}
